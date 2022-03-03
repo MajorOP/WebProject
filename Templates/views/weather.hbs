@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlinks}}
+    <title>Weather Services</title>
+</head>
+<body>
+    
+ <!-- Header + Navbar set -->
+        {{>header}}
+
+        <!-- Center Section -->
+        <div class="weather-bg">
+
+       
+        <article class="box weather mt-5 mb-5 w-25">
+            <div class="container">
+                
+            <input type="input" class="form-control text-white  transparent-input form-rounded" id="cityname" placeholder="Enter City name">
+            <hr style="color: wheat;"> <div class="text-center mb-3">
+            <input type="submit" class="form-rounded btn btn-info" value="Search" id="submitbtn">
+        </div>
+            </div>
+            <div class="container"></div>
+            <div class="icon bubble black">
+              <div class="spin">
+                <img src="https://dl.dropbox.com/s/0qq5anxliaopt8d/sun.png" id="img">
+              </div>
+            </div><h1 class="text pt-4 pb-2" id="day">Monday</h1>
+            <h4 class="text pt-4 pb-2 text-center" id="date">Date</h4>
+            <h2 class="text text-center pt-4 pb-2" id="citycountry"></h2>
+            
+            
+            <span class="temp" id="temp">0&deg;</span>
+            <span class="high-low text-center" id="temp-status">Temp Status : </span><br>
+             <span class="high-low" id="temp-min-max">  0&deg;/ 0&deg;</span> 
+          </article>
+        </div>
+        <!-- Footer -->
+        
+
+    {{>footer}}
+  <!-- Footer -->
+    
+</body>
+<script src="js/main.js"></script>
+</html>
